@@ -1,10 +1,10 @@
 <?php
 
-namespace DoubleThreeDigital\AddonBoilerplate\Tests;
+namespace DoubleThreeDigital\StaticCacheManager\Tests;
 
 use Statamic\Extend\Manifest;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use DoubleThreeDigital\AddonBoilerplate\ServiceProvider;
+use DoubleThreeDigital\StaticCacheManager\ServiceProvider;
 use Statamic\Providers\StatamicServiceProvider;
 use Statamic\Statamic;
 
@@ -30,9 +30,9 @@ abstract class TestCase extends OrchestraTestCase
         parent::getEnvironmentSetUp($app);
 
         $app->make(Manifest::class)->manifest = [
-            'doublethreedigital/addon-boilerplate' => [
-                'id' => 'doublethreedigital/addon-boilerplate',
-                'namespace' => 'DoubleThreeDigital\\AddonBoilerplate\\',
+            'doublethreedigital/static-cache-manager' => [
+                'id' => 'doublethreedigital/static-cache-manager',
+                'namespace' => 'DoubleThreeDigital\\StaticCacheManager\\',
             ],
         ];
     }

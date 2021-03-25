@@ -1,25 +1,25 @@
 {
-    "name": "doublethreedigital/addon-boilerplate",
-    "description": "Addon Boilerplate for Statamic v3",
+    "name": "doublethreedigital/static-cache-manager",
+    "description": "Simple little utility to clear paths in your static cache.",
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "DoubleThreeDigital\\AddonBoilerplate\\": "src"
+            "DoubleThreeDigital\\StaticCacheManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DoubleThreeDigital\\AddonBoilerplate\\Tests\\": "tests"
+            "DoubleThreeDigital\\StaticCacheManager\\Tests\\": "tests"
         }
     },
     "extra": {
         "statamic": {
-            "name": "Addon Boilerplate",
-            "description": "Addon Boilerplate for Statamic v3"
+            "name": "Static Cache Manager",
+            "description": "Simple little utility to clear paths in your static cache."
         },
         "laravel": {
             "providers": [
-                "DoubleThreeDigital\\AddonBoilerplate\\ServiceProvider"
+                "DoubleThreeDigital\\StaticCacheManager\\ServiceProvider"
             ]
         }
     },

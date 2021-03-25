@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\AddonBoilerplate\Tests;
+namespace DoubleThreeDigital\StaticCacheManager\Tests;
 
 class ExampleTest extends TestCase
 {
