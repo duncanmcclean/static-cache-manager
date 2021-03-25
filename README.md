@@ -1,37 +1,34 @@
-![Banner](https://raw.githubusercontent.com/doublethreedigital/static-cache-manager/master/banner.png)
+<!-- ![Banner](https://raw.githubusercontent.com/doublethreedigital/static-cache-manager/master/banner.png) -->
 
-## Addon Boilerplate
+## Static Cache Manager
+
+**[🚧] Work in progress - still needs some tidy up**
 
 This repository contains the source code for Static Cache Manager, a simple little utility to clear paths in your static cache.
 
 ## Installation
 
 1. Install via Composer `composer require doublethreedigital/static-cache-manager`
-2. Publish configuration, assets etc `php artisan vendor:publish --provider="doublethreedigital/static-cache-manager"`
 
 ## Documentation
 
-### Configuration
+### Usage
 
-This addon provides its own configuration file. You can use this to configure the API keys and other options.
-
-```php
-return [
-    //
-];
-```
+1. Go to Utilities in the Statamic CP
+2. Click on 'Static Cache Manager'
+3. Enter in the paths you'd like to clear and click 'Clear'
+4. Hey presto! Static caching paths have been cleared.
 
 ## Security
 
 From a security perspective, only the latest version will receive a security release if a vulnerability is found.
 
-If you discover a security vulnerability within static-cache-manager, please report it [via email](mailto::vendorEmail) straight away. Please don't report security issues in the issue tracker.
+If you discover a security vulnerability within static-cache-manager, please report it [via email](mailto:hello@doublethree.digital) straight away. Please don't report security issues in the issue tracker.
 
 ## Resources
 
 * [**Issue Tracker**](https://github.com/doublethreedigital/static-cache-manager/issues): Find & report bugs in static-cache-manager
-* [**Discussions**](https://github.com/doublethreedigital/static-cache-manager/discussions): Get help and put forward feature requests
-* [**Email**](mailto::vendorEmail): Support from the developer behind the addon
+* [**Email**](mailto:hello@doublethree.digital): Support from the developer behind the addon
 
 ---
 
