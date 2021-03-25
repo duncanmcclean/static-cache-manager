@@ -14,7 +14,9 @@ class ClearController
                 return str_replace('\r', '', $path);
             })
             ->each(function ($path) {
-                File::deleteDirectory("public/static/{$path}");
+                $staticCachePath = config('statamic.static_caching.strategies.full.path');
+
+                File::deleteDirectory("{$staticCachePath}/{$path}");
             });
 
         return redirect()->back();
