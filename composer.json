@@ -1,0 +1,47 @@
+{
+    "name": "doublethreedigital/addon-boilerplate",
+    "description": "Addon Boilerplate for Statamic v3",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "DoubleThreeDigital\\AddonBoilerplate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DoubleThreeDigital\\AddonBoilerplate\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Addon Boilerplate",
+            "description": "Addon Boilerplate for Statamic v3"
+        },
+        "laravel": {
+            "providers": [
+                "DoubleThreeDigital\\AddonBoilerplate\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "statamic/cms": "^3.0 || ^3.1"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^4.2",
+        "orchestra/testbench": "^4.0|^5.0|^6.0"
+    },
+    "scripts": {
+        "lint": [
+            "php-cs-fixer fix ./src"
+        ],
+        "test": [
+            "php -d memory_limit=-1 -d max_execution_time=0 ./vendor/bin/phpunit"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
