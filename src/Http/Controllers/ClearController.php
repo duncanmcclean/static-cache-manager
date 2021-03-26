@@ -2,6 +2,7 @@
 
 namespace DoubleThreeDigital\StaticCacheManager\Http\Controllers;
 
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -9,16 +10,35 @@ class ClearController
 {
     public function __invoke(Request $request)
     {
-        collect(explode(PHP_EOL, $request->get('paths')))
-            ->map(function ($path) {
-                return str_replace('\r', '', $path);
-            })
-            ->each(function ($path) {
-                $staticCachePath = config('statamic.static_caching.strategies.full.path');
-
-                File::deleteDirectory("{$staticCachePath}/{$path}");
-            });
-
+        $paths = explode(PHP_EOL, $request->get('paths'));
+        foreach ($paths as $path) {
+            $this->delete(trim($path));
+        }
         return redirect()->back();
+    }
+
+    protected function delete($path)
+    {
+        $staticCachePath = config('statamic.static_caching.strategies.full.path');
+        if (is_dir($staticCachePath.'/'.$path)) {
+            return $this->deleteDir($staticCachePath.'/'.$path);
+        }
+        return $this->deleteFile($staticCachePath.'/'.$path);
+    }
+
+    protected function deleteFile($path)
+    {
+        if (Str::of($path)->contains('*')) {
+            foreach (glob($path) as $file) {
+                File::delete($file);
+            }
+        } else {
+            File::delete($path);
+        }
+    }
+
+    protected function deleteDir($path)
+    {
+        return File::deleteDirectory($path);
     }
 }
