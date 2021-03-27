@@ -11,18 +11,22 @@ class ClearController
     public function __invoke(Request $request)
     {
         $paths = explode(PHP_EOL, $request->get('paths'));
+
         foreach ($paths as $path) {
             $this->delete(trim($path));
         }
+
         return redirect()->back();
     }
 
     protected function delete($path)
     {
         $staticCachePath = config('statamic.static_caching.strategies.full.path');
+
         if (is_dir($staticCachePath.'/'.$path)) {
             return $this->deleteDir($staticCachePath.'/'.$path);
         }
+
         return $this->deleteFile($staticCachePath.'/'.$path);
     }
 
@@ -32,9 +36,11 @@ class ClearController
             foreach (glob($path) as $file) {
                 File::delete($file);
             }
-        } else {
-            File::delete($path);
+
+            return;
         }
+
+        File::delete($path);
     }
 
     protected function deleteDir($path)
