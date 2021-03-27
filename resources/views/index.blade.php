@@ -12,7 +12,7 @@
         <form method="POST" action="{{ cp_route('utilities.static-cache-manager.clear') }}">
             @csrf
 
-            <textarea class="input-text mb-1 w-1/2" rows="6" name="paths" placeholder="Eg: blog/2020"></textarea>
+            <textarea class="input-text mb-1 w-1/2" rows="6" name="paths" placeholder="Eg: blog/2020">{{ implode("\n", config('static-cache-manager.defaults.paths')) }}</textarea>
 
             <div>
                 <button type="submit" class="btn-primary">Clear</button>
