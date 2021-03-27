@@ -23,7 +23,7 @@ class ClearController
     {
         $staticCachePath = config('statamic.static_caching.strategies.full.path');
 
-        if (is_dir($staticCachePath.'/'.$path)) {
+        if (File::isDirectory($staticCachePath.'/'.$path)) {
             return $this->deleteDir($staticCachePath.'/'.$path);
         }
 
@@ -33,7 +33,7 @@ class ClearController
     protected function deleteFile($path)
     {
         if (Str::of($path)->contains('*')) {
-            foreach (glob($path) as $file) {
+            foreach (File::allFiles($path) as $file) {
                 File::delete($file);
             }
 
