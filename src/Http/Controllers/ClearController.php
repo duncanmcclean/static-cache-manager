@@ -33,7 +33,7 @@ class ClearController
     protected function deleteFile($path)
     {
         if (Str::of($path)->contains('*')) {
-            foreach (File::allFiles($path) as $file) {
+            foreach (File::glob($path) as $file) {
                 File::delete($file);
             }
 
