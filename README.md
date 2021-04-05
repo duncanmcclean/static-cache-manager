@@ -2,8 +2,6 @@
 
 ## Static Cache Manager
 
-**[🚧] Work in progress - still needs some tidy up**
-
 This repository contains the source code for Static Cache Manager, a simple little utility to clear paths in your static cache.
 
 ## Installation
