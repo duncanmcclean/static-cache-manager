@@ -1,4 +1,4 @@
-<!-- ![Banner](https://raw.githubusercontent.com/doublethreedigital/static-cache-manager/master/banner.png) -->
+![Banner](https://raw.githubusercontent.com/doublethreedigital/static-cache-manager/master/banner.png)
 
 ## Static Cache Manager
 
