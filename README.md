@@ -8,7 +8,7 @@
 
 This repository contains the source code for Static Cache Manager, a simple little utility to clear paths in your static cache.
 
-This repository contains the source code of Static Cache Manager. While Static Cache Manager is free and doesn't require a license, you can [donate to Duncan](https://duncanmcclean.com/donate), the developer behind Static Cache Manager, to show your appreciation.
+This repository contains the source code of Static Cache Manager. While Static Cache Manager is free and doesn't require you to purchase a license, consider [sponsoring Duncan](https://github.com/sponsors/duncanmcclean) to support the ongoing maintenance and development of new features.
 
 ## Installation
 
