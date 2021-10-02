@@ -1,6 +1,6 @@
 <!-- statamic:hide -->
 
-![Banner](https://raw.githubusercontent.com/doublethreedigital/static-cache-manager/master/banner.png)
+![Banner](./banner.png)
 
 ## Static Cache Manager
 
@@ -8,11 +8,15 @@
 
 This repository contains the source code for Static Cache Manager, a simple little utility to clear paths in your static cache.
 
-This repository contains the source code of Static Cache Manager. While Static Cache Manager is free and doesn't require you to purchase a license, consider [sponsoring Duncan](https://github.com/sponsors/duncanmcclean) to support the ongoing maintenance and development of new features.
-
 ## Installation
 
-1. Install via Composer `composer require doublethreedigital/static-cache-manager`
+First, require Static Cache Manager as a Composer dependency:
+
+```
+composer require doublethreedigital/static-cache-manager
+```
+
+And that's you done! The utility should now show in the Control Panel.
 
 ## Documentation
 
@@ -23,16 +27,18 @@ This repository contains the source code of Static Cache Manager. While Static C
 3. Enter in the paths you'd like to clear and click 'Clear'
 4. Hey presto! Static caching paths have been cleared.
 
+## Sponsor Duncan
+
+This addon is open-source, meaning anyone can use this addon in their sites for **free**! 
+
+However, maintaining and developing new features for open-source projects can take quite a bit of time. If you're using Static Cache Manager in your production environment, please [consider sponsoring me](https://github.com/sponsors/duncanmcclean) (Duncan McClean) for a couple dollars a month.
+
+
 ## Security
 
-From a security perspective, only the latest version will receive a security release if a vulnerability is found.
+Only the latest version of Static Cache Manager (v1.0) will receive security updates if a vulnerability is found. 
 
-If you discover a security vulnerability within static-cache-manager, please report it [via email](mailto:hello@doublethree.digital) straight away. Please don't report security issues in the issue tracker.
-
-## Resources
-
-* [**Issue Tracker**](https://github.com/doublethreedigital/static-cache-manager/issues): Find & report bugs in static-cache-manager
-* [**Email**](mailto:hello@doublethree.digital): Support from the developer behind the addon
+If you discover a security vulnerability, please report it to Duncan straight away, [via email](mailto:security@doublethree.digital). Please don't report security issues through GitHub Issues.
 
 <!-- statamic:hide -->
 
