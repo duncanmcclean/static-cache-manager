@@ -20,12 +20,7 @@ And that's you done! The utility should now show in the Control Panel.
 
 ## Documentation
 
-### Usage
-
-1. Go to Utilities in the Statamic CP
-2. Click on 'Static Cache Manager'
-3. Enter in the paths you'd like to clear and click 'Clear'
-4. Hey presto! Static caching paths have been cleared.
+Read the documentation over on the [Statamic Marketplace](https://statamic.com/addons/double-three-digital/static-cache-manager/docs).
 
 ## Sponsor Duncan
 
