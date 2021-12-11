@@ -2,9 +2,9 @@
 
 namespace DoubleThreeDigital\StaticCacheManager\Tests;
 
-use Statamic\Extend\Manifest;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use DoubleThreeDigital\StaticCacheManager\ServiceProvider;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use Statamic\Extend\Manifest;
 use Statamic\Providers\StatamicServiceProvider;
 use Statamic\Statamic;
 
@@ -43,7 +43,7 @@ abstract class TestCase extends OrchestraTestCase
 
         $configs = [
             'assets', 'cp', 'forms', 'static_caching',
-            'sites', 'stache', 'system', 'users'
+            'sites', 'stache', 'system', 'users',
         ];
 
         foreach ($configs as $config) {
