@@ -2,9 +2,9 @@
 
 namespace DoubleThreeDigital\StaticCacheManager\Http\Controllers;
 
-use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class ClearController
 {
