@@ -4,7 +4,7 @@ namespace DoubleThreeDigital\StaticCacheManager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
+use Statamic\Support\Str;
 
 class ClearController
 {
@@ -21,13 +21,13 @@ class ClearController
 
     protected function delete($path)
     {
-        $staticCachePath = config('statamic.static_caching.strategies.full.path');
+        $path = config('statamic.static_caching.strategies.full.path').Str::ensureLeft($path, '/');
 
-        if (File::isDirectory($staticCachePath.'/'.$path)) {
-            return $this->deleteDir($staticCachePath.'/'.$path);
+        if (File::isDirectory($path)) {
+            $this->deleteDirectory($path);
         }
 
-        return $this->deleteFile($staticCachePath.'/'.$path);
+        $this->deleteFile($path);
     }
 
     protected function deleteFile($path)
@@ -40,10 +40,10 @@ class ClearController
             return;
         }
 
-        File::delete($path);
+        File::delete($path.'_.html');
     }
 
-    protected function deleteDir($path)
+    protected function deleteDirectory($path)
     {
         return File::deleteDirectory($path);
     }
