@@ -19,7 +19,7 @@ class ClearController
         return redirect()->back();
     }
 
-    protected function delete($path)
+    protected function delete($path): void
     {
         $path = config('statamic.static_caching.strategies.full.path') . Str::ensureLeft($path, '/');
 
@@ -30,7 +30,7 @@ class ClearController
         $this->deleteFile($path);
     }
 
-    protected function deleteFile($path)
+    protected function deleteFile($path): void
     {
         if (! Str::of($path)->contains('*')) {
             $path .= '_*';
@@ -41,8 +41,8 @@ class ClearController
         }
     }
 
-    protected function deleteDirectory($path)
+    protected function deleteDirectory($path): void
     {
-        return File::deleteDirectory($path);
+        File::deleteDirectory($path);
     }
 }
