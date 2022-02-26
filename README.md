@@ -27,14 +27,13 @@ And that's you done! The utility should now show in the Control Panel.
 
 ## Sponsor Duncan
 
-This addon is open-source, meaning anyone can use this addon in their sites for **free**! 
+This addon is open-source, meaning anyone can use this addon in their sites for **free**!
 
 However, maintaining and developing new features for open-source projects can take quite a bit of time. If you're using Static Cache Manager in your production environment, please [consider sponsoring me](https://github.com/sponsors/duncanmcclean) (Duncan McClean) for a couple dollars a month.
 
-
 ## Security
 
-Only the latest version of Static Cache Manager (v1.0) will receive security updates if a vulnerability is found. 
+Only the latest version of Static Cache Manager (v1.2) will receive security updates if a vulnerability is found.
 
 If you discover a security vulnerability, please report it to Duncan straight away, [via email](mailto:security@doublethree.digital). Please don't report security issues through GitHub Issues.
 
