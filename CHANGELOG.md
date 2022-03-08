@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+## v1.2.1 (2022-03-08)
+
+### What's improved
+
+- Finally added an icon to the utility
+- Made the textbox work a little bit better for smaller screen sizes
+
 ## v1.2.0 (2022-02-26)
 
 ### What's new
