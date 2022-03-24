@@ -6,7 +6,7 @@
 
 <!-- /statamic:hide -->
 
-This repository contains the source code for Static Cache Manager, a simple little utility to clear paths in your static cache.
+Static Cache Manager is a simple Control Panel utility to clear specific paths in your site's static cache. 
 
 ## Installation
 
@@ -22,7 +22,7 @@ And that's you done! The utility should now show in the Control Panel.
 
 1. Go to Utilities in the Statamic CP
 2. Click on 'Static Cache Manager'
-3. Enter in the paths you'd like to clear and click 'Clear'
+3. Enter in the paths you'd like to clear and click 'Clear' (you may provide wildcards: eg. `/news/2022/*`)
 4. Hey presto! Static caching paths have been cleared.
 
 ## Sponsor Duncan
