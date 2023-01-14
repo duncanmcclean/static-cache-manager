@@ -1,10 +1,4 @@
-<!-- statamic:hide -->
-
-![Banner](./banner.png)
-
-## Static Cache Manager
-
-<!-- /statamic:hide -->
+# Static Cache Manager
 
 Static Cache Manager is a simple Control Panel utility to clear specific paths in your site's static cache.
 
@@ -29,9 +23,11 @@ And that's you done! The utility should now show in the Control Panel.
 
 ## Support
 
-Static Cache Manager is a free addon, because of this there is no direct support channel. If you have a feature request or experience a bug, please [open a GitHub Issue](https://github.com/duncanmcclean/static-cache-manager/issues/new/choose) and it'll be looked into over the next week or two.
+If you find a bug, have some question or have a feature request, please open a [GitHub Issue or Discussion](https://github.com/duncanmcclean/static-cache-manager/issues/new/choose).
 
-> Only the latest version of this addon is supported. If you open a bug report using an old version, your issue will be closed.
+> Please note: only the latest version of this addon is supported. Any bug reports regarding an old version will be closed.
+
+<!-- statamic:hide -->
 
 ## Sponsor me!
 
@@ -41,13 +37,19 @@ However, there is a cost from my perspective to maintain this addon (fixing new 
 
 If you use this software on your projects & can afford it, I'd appreciate it if you'd consider [sponsoring me](https://github.com/sponsors/duncanmcclean), even if it's just a couple dollars a month.
 
-<!-- statamic:hide -->
+## Contributing
 
----
+Contributions are welcome, and are accepted via pull requests. You should follow this process when contributing:
 
-<p>
-<a href="https://statamic.com"><img src="https://img.shields.io/badge/Statamic-3.3+-FF269E?style=for-the-badge" alt="Compatible with Statamic v3"></a>
-<a href="https://packagist.org/packages/doublethreedigital/static-cache-manager/stats"><img src="https://img.shields.io/packagist/v/doublethreedigital/static-cache-manager?style=for-the-badge" alt="static-cache-manager on Packagist"></a>
-</p>
+1. Fork the repository
+2. Make your code change
+3. Open a pull request, detailing the changes you've made.
+4. Ensure StyleCI isn't reporting any code-style errors. If it is, you should resolve those.
+
+If your pull request is a Work in Progress, please mark your pull request as a draft.
+
+## Security
+
+If you've found a bug regarding security please email security@doublethree.digital instead of using the issue tracker.
 
 <!-- /statamic:hide -->
