@@ -21,7 +21,7 @@ class ClearController
 
     protected function delete($path): void
     {
-        $path = config('statamic.static_caching.strategies.full.path') . Str::ensureLeft($path, '/');
+        $path = config('statamic.static_caching.strategies.full.path').Str::ensureLeft($path, '/');
 
         if (File::isDirectory($path)) {
             $this->deleteDirectory($path);
