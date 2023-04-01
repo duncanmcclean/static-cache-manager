@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\StaticCacheManager\Tests;
+namespace DuncanMcClean\StaticCacheManager\Tests;
 
 class ExampleTest extends TestCase
 {
