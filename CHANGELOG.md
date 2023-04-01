@@ -9,7 +9,7 @@
 ### Upgrade guide
 
 1. In your site's `composer.json` file, replace `doublethreedigital/static-cache-manager` with `duncanmcclean/static-cache-manager`
-2. Then, change the addon's version constraint to `^4.0`
+2. Then, change the addon's version constraint to `^3.0`
 
 ## v2.1.0 (2023-01-28)
 
