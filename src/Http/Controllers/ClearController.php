@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\StaticCacheManager\Http\Controllers;
+namespace DuncanMcClean\StaticCacheManager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -21,7 +21,7 @@ class ClearController
 
     protected function delete($path): void
     {
-        $path = config('statamic.static_caching.strategies.full.path') . Str::ensureLeft($path, '/');
+        $path = config('statamic.static_caching.strategies.full.path').Str::ensureLeft($path, '/');
 
         if (File::isDirectory($path)) {
             $this->deleteDirectory($path);
