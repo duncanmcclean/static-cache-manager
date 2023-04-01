@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### What's new
+
+- Static Cache Manager v3 now supports Statamic 4 #16
+
+### Upgrade guide
+
+1. In your site's `composer.json` file, replace `doublethreedigital/static-cache-manager` with `duncanmcclean/static-cache-manager`
+2. Then, change the addon's version constraint to `^4.0`
+
 ## v2.1.0 (2023-01-28)
 
 ### What's new
@@ -55,3 +64,7 @@ The supported versions of PHP/Statamic/Laravel used alongside this addon have ch
 ## v1.0.0 (2021-04-05)
 
 - Initial release
+
+```
+
+```
