@@ -1,15 +1,15 @@
 {
-    "name": "doublethreedigital/static-cache-manager",
+    "name": "duncanmcclean/static-cache-manager",
     "description": "Simple little utility to clear paths in your static cache.",
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "DoubleThreeDigital\\StaticCacheManager\\": "src"
+            "DuncanMcClean\\StaticCacheManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DoubleThreeDigital\\StaticCacheManager\\Tests\\": "tests"
+            "DuncanMcClean\\StaticCacheManager\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -19,7 +19,7 @@
         },
         "laravel": {
             "providers": [
-                "DoubleThreeDigital\\StaticCacheManager\\ServiceProvider"
+                "DuncanMcClean\\StaticCacheManager\\ServiceProvider"
             ]
         }
     },

@@ -1,8 +1,8 @@
 <?php
 
-namespace DoubleThreeDigital\StaticCacheManager\Tests;
+namespace DuncanMcClean\StaticCacheManager\Tests;
 
-use DoubleThreeDigital\StaticCacheManager\ServiceProvider;
+use DuncanMcClean\StaticCacheManager\ServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Statamic\Extend\Manifest;
 use Statamic\Providers\StatamicServiceProvider;
@@ -30,9 +30,9 @@ abstract class TestCase extends OrchestraTestCase
         parent::getEnvironmentSetUp($app);
 
         $app->make(Manifest::class)->manifest = [
-            'doublethreedigital/static-cache-manager' => [
-                'id' => 'doublethreedigital/static-cache-manager',
-                'namespace' => 'DoubleThreeDigital\\StaticCacheManager\\',
+            'duncanmcclean/static-cache-manager' => [
+                'id' => 'duncanmcclean/static-cache-manager',
+                'namespace' => 'DuncanMcClean\\StaticCacheManager\\',
             ],
         ];
     }

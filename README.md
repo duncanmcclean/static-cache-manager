@@ -7,7 +7,7 @@ Static Cache Manager is a simple Control Panel utility to clear specific paths i
 First, require Static Cache Manager as a Composer dependency:
 
 ```
-composer require doublethreedigital/static-cache-manager
+composer require duncanmcclean/static-cache-manager
 ```
 
 And that's you done! The utility should now show in the Control Panel.

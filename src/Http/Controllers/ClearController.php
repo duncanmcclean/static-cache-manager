@@ -1,6 +1,6 @@
 <?php
 
-namespace DoubleThreeDigital\StaticCacheManager\Http\Controllers;
+namespace DuncanMcClean\StaticCacheManager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;

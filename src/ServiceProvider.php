@@ -1,8 +1,8 @@
 <?php
 
-namespace DoubleThreeDigital\StaticCacheManager;
+namespace DuncanMcClean\StaticCacheManager;
 
-use DoubleThreeDigital\StaticCacheManager\Http\Controllers\ClearController;
+use DuncanMcClean\StaticCacheManager\Http\Controllers\ClearController;
 use Statamic\Facades\Utility;
 use Statamic\Providers\AddonServiceProvider;
 
