@@ -19,7 +19,6 @@ class ServiceProvider extends AddonServiceProvider
             ->icon('hammer-wrench')
             ->routes(function ($router) {
                 $router->post('/clear', ClearController::class)->name('clear');
-            })
-            ->register();
+            });
     }
 }
