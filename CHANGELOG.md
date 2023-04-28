@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v3.0.0 (2023-04-28)
+
 ### What's new
 
 - Static Cache Manager v3 now supports Statamic 4 #16
