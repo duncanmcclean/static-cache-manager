@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v3.1.1 (2023-07-09)
+
+### What's fixed
+
+* Fixed utility not being registered properly #20
+
 ## v3.1.0 (2023-06-13)
 
 ### What's new
