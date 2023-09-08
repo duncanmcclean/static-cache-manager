@@ -23,7 +23,7 @@ class ClearController
     {
         $cachePaths = config('statamic.static_caching.strategies.full.path');
 
-        if (!is_array($cachePaths)) {
+        if (! is_array($cachePaths)) {
             $cachePaths = [$cachePaths];
         }
 
