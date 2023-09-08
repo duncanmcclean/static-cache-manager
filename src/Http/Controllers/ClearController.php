@@ -21,13 +21,21 @@ class ClearController
 
     protected function delete($path): void
     {
-        $path = config('statamic.static_caching.strategies.full.path').Str::ensureLeft($path, '/');
+        $cachePaths = config('statamic.static_caching.strategies.full.path');
 
-        if (File::isDirectory($path)) {
-            $this->deleteDirectory($path);
+        if (!is_array($cachePaths)) {
+            $cachePaths = [$cachePaths];
         }
 
-        $this->deleteFile($path);
+        foreach ($cachePaths as $cachePath) {
+            $path = $cachePath.Str::ensureLeft($path, '/');
+
+            if (File::isDirectory($path)) {
+                $this->deleteDirectory($path);
+            }
+
+            $this->deleteFile($path);
+        }
     }
 
     protected function deleteFile($path): void
