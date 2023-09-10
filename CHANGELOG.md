@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## v3.1.2 (2023-09-10)
+
+### What's improved
+
+* Multi-site is now actually supported! #21 by @martyf
+
 ## v3.1.1 (2023-07-09)
 
 ### What's fixed
