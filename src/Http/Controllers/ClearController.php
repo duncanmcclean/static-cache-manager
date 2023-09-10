@@ -3,6 +3,7 @@
 namespace DuncanMcClean\StaticCacheManager\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Statamic\Support\Str;
 
@@ -23,11 +24,7 @@ class ClearController
     {
         $cachePaths = config('statamic.static_caching.strategies.full.path');
 
-        if (! is_array($cachePaths)) {
-            $cachePaths = [$cachePaths];
-        }
-
-        foreach ($cachePaths as $cachePath) {
+        collect(Arr::wrap($cachePaths))->each(function (string $cachePath) use ($path) {
             $path = $cachePath.Str::ensureLeft($path, '/');
 
             if (File::isDirectory($path)) {
@@ -35,7 +32,7 @@ class ClearController
             }
 
             $this->deleteFile($path);
-        }
+        });
     }
 
     protected function deleteFile($path): void
