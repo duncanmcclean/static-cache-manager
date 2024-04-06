@@ -7,5 +7,5 @@ use Statamic\Extend\AddonTestCase;
 
 abstract class TestCase extends AddonTestCase
 {
-    protected $addonServiceProvider = ServiceProvider::class;
+    protected string $addonServiceProvider = ServiceProvider::class;
 }
