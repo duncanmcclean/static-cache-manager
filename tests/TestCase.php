@@ -3,7 +3,7 @@
 namespace DuncanMcClean\StaticCacheManager\Tests;
 
 use DuncanMcClean\StaticCacheManager\ServiceProvider;
-use Statamic\Extend\AddonTestCase;
+use Statamic\Testing\AddonTestCase;
 
 abstract class TestCase extends AddonTestCase
 {
