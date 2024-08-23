@@ -2,6 +2,9 @@
 
 Static Cache Manager is a simple Control Panel utility to clear specific paths in your site's static cache.
 
+> [!NOTE]  
+> This addon only works when using **full-measure** static caching.
+
 ## Installation
 
 First, require Static Cache Manager as a Composer dependency:
