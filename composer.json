@@ -24,11 +24,11 @@
         }
     },
     "require": {
-        "php": "^8.2",
-        "statamic/cms": "^5.41"
+        "php": "^8.3",
+        "statamic/cms": "dev-master"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.28 || ^9.6.1 || ^10.0"
+        "orchestra/testbench": "^9.6.1 || ^10.0"
     },
     "scripts": {
         "lint": [
