@@ -3,6 +3,7 @@
 namespace DuncanMcClean\StaticCacheManager;
 
 use DuncanMcClean\StaticCacheManager\Http\Controllers\ClearController;
+use Illuminate\Support\Facades\File;
 use Statamic\Facades\Utility;
 use Statamic\Providers\AddonServiceProvider;
 
@@ -17,7 +18,7 @@ class ServiceProvider extends AddonServiceProvider
                 ->title(__('Static Cache Manager'))
                 ->description(__('Clear specific paths in your static cache.'))
                 ->view('static-cache-manager::index')
-                ->icon('hammer-wrench')
+                ->icon(File::get(__DIR__.'/../resources/svg/hammer.svg'))
                 ->routes(function ($router) {
                     $router->post('/clear', ClearController::class)->name('clear');
                 });
