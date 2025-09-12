@@ -6,7 +6,7 @@
 @section('title', __('Static Cache Manager'))
 
 @section('content')
-    <ui-header title="{{ __('Static Cache Manager') }}" icon="hammer-wrench"></ui-header>
+    <ui-header title="{{ __('Static Cache Manager') }}" icon="{{ $icon }}"></ui-header>
 
     <ui-card-panel heading="{{ __('Invalidation') }}" subheading="{{ __('Which paths would you like to clear? One line per path.') }}">
         <form method="POST" action="{{ cp_route('utilities.static-cache-manager.clear') }}">
