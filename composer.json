@@ -28,7 +28,7 @@
         "statamic/cms": "^6.0.0-alpha.1"
     },
     "require-dev": {
-        "orchestra/testbench": "^9.6.1 || ^10.0"
+        "orchestra/testbench": "^10.0"
     },
     "scripts": {
         "lint": [
