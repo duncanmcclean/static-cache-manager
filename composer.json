@@ -45,6 +45,5 @@
         "allow-plugins": {
             "pixelfear/composer-dist-plugin": true
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
