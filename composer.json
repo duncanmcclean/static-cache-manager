@@ -28,7 +28,7 @@
         "statamic/cms": "^5.41"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.28 || ^9.6.1 || ^10.0"
+        "orchestra/testbench": "^8.28 || ^9.6.1 || ^10.8"
     },
     "scripts": {
         "lint": [
@@ -45,6 +45,5 @@
         "allow-plugins": {
             "pixelfear/composer-dist-plugin": true
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
