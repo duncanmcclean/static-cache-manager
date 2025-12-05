@@ -1,5 +1,7 @@
 # Static Cache Manager
 
+**This addon is no longer necessary, as of Statamic 6. You can clear specific paths via the "Cache Manager" utility.**
+
 Static Cache Manager is a simple Control Panel utility to clear specific paths in your site's static cache.
 
 > [!NOTE]  
